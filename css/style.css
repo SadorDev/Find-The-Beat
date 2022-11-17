@@ -16,7 +16,7 @@ h1{
     text-align: center;
 }
 main {
-    background: center / cover no-repeat url("../apocal-drum.jfif");
+    background: center / cover no-repeat url("../assets/images/apocal-drum.jfif");
     letter-spacing: 2px;
     height: 100vh;
     width: 100%;
