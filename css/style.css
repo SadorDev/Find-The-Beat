@@ -76,10 +76,16 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-}
+  
 .left-grid p, .right-grid p {
     width: 80px;
+    }
+.cell{
+    border-radius: 5px;
+    border: 2px solid rgba(0, 255, 34, 0.212);
+    height:60px;
+    width:60px;
+    padding-top: 15px;
     text-align: center;
 }
 
