@@ -1,55 +1,85 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 body {
-    font-family: 'Metal Mania', cursive;
-    background: center / cover no-repeat url("../assets/images/apocal-drum.jfif");
-    color: rgb(0, 255, 34);
-    font-size: 22px;
+	font-family: "Metal Mania", cursive;
+	background: center / cover no-repeat url("../assets/images/apocal-drum.jfif");
+	color: rgb(0, 255, 34);
+	font-size: 22px;
 }
-h1{
-    padding: 30px 0;
-    font-size: 40px;
-    letter-spacing: 4px;
-    text-align: center;
+h1 {
+	padding: 30px 0;
+	font-size: 40px;
+	letter-spacing: 4px;
+	text-align: center;
 }
 main {
-    letter-spacing: 2px;
+	letter-spacing: 2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+button {
+	background-color: rgba(0, 0, 0, 0.918);
+	width: 100px;
+	height: 60px;
+	border-radius: 15px;
+	color: rgb(0, 255, 34);
+}
+
+#game-container {
+    position: relative;
+	width: 1000px;
+	height: 600px;
+	background-color: rgba(26, 23, 23, 0.8);
+	border-radius: 20px;
+	box-shadow: rgb(0, 255, 34);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+#start-btn{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.info, .btns{
     display: flex;
-    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.grid-container {
+	display: flex;
     justify-content: center;
-    flex-direction: column;
+    width: 100%;
+    gap: 20px;
 }
-button{
-    background-color:rgba(0, 0, 0, 0.918);
-    width: 100px;
-    height: 60px;
-    border-radius: 15px;
-    color: rgb(0, 255, 34);
-}
-
-#game-container{
-    width:1000px;
-    height:600px;
-    background-color: rgba(26, 23, 23, 0.8 );
-    border-radius: 20px;
-    box-shadow: rgb(0, 255, 34);
-}
-
-.grid-container{
-    display: grid;
-    width: 380px;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 4px;
-    grid-row-gap: 4px;
-    justify-items: center;
+.grid-3{
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-
+    gap: 5px;
+    margin-bottom: 20px;
 }
+
+.cell {
+	border-radius: 5px;
+	border: 2px solid rgba(0, 255, 34, 0.212);
+	height: 70px;
+	width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+.left-grid p, .right-grid p {
+    width: 80px;
+    }
 .cell{
     border-radius: 5px;
     border: 2px solid rgba(0, 255, 34, 0.212);
@@ -59,12 +89,13 @@ button{
     text-align: center;
 }
 
-.controllers{
-    display:flex;
-    justify-content: space-between;
+.controllers {
+	display: flex;
+	justify-content: space-between;
 }
 
-.info{
-    display:flex;
-    gap: 20px;
+.info {
+	display: flex;
+	gap: 20px;
 }
+
