@@ -17,3 +17,15 @@ document
 
 
 // !!!!!!!Game code below!!!!!!!!!!
+
+const startBtn = document.querySelector('#start-btn');
+const levelBtn = document.querySelector('#level');
+const resetBtn = document.querySelector('#reset');
+const score = document.querySelector('#score');
+const timer = document.querySelector('#timer');
+const lives = document.querySelector('#lives');
+
+// console.log(startBtn,levelBtn,resetBtn,score,timer,lives);
+score.textContent = "Score = 0"
+timer.textContent = "Time = 00:00:00"
+lives.textContent = "Lives = 5"
