@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,25 +11,57 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Find The Beat</title>
 </head>
+
 <body>
     <main>
         <h1 class="title">Find The Beat</h1>
         <section id="game-container">
-            <div class="controllers">
-            <div class="btns">
-                <button>New Game</button>
-                <button>Change level</button>
-                <button>Reset</button>
-            </div>
+            <button id="start-btn">New Game</button>
+
             <div class="info">
-                <span>Score</span>
-                <span>Timer</span>
-                <p>Message to player</p>
+                <span>Score :</span>
+                <span>Timer :</span>
+                <span>Lives :</span>
             </div>
+            <div class="grid-container">
+                <div class="left-grid">
+                    <div class="grid-3">
+                        <p>Drums</p>
+                        <div class="cell">1</div>
+                        <div class="cell">2</div>
+                        <div class="cell">3</div>
+                    </div>
+                    <div class="grid-3">
+                        <p>Snare</p>
+                        <div class="cell">4</div>
+                        <div class="cell">5</div>
+                        <div class="cell">6</div>
+                    </div>
+                </div>
+                <div class="right-grid">
+                    <div class="grid-3">
+                        <div class="cell">7</div>
+                        <div class="cell">8</div>
+                        <div class="cell">9</div>
+                        <p>Kick</p>
+                    </div>
+                    <div class="grid-3">
+                        <div class="cell">10</div>
+                        <div class="cell">11</div>
+                        <div class="cell">12</div>
+                        <p>Beat</p>
+                    </div>
+                </div>
+            </div>
+            <div class="btns">
+                <button>Change level</button>
+                <p>INSTRUCTIONS</p>
+                <button>Reset</button>
         </div>
         <div class="grid-container">
             <div class="cell">Drum 1
                 <audio class="sound" src=""></audio>
+
             </div>
             <div class="cell">Drum 2
                 <audio class="sound" src=""></audio>
@@ -68,4 +101,5 @@
     </main>
     <script src="./js/app.js"></script>
 </body>
+
 </html>
