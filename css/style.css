@@ -55,6 +55,8 @@ button{
     border: 2px solid rgba(0, 255, 34, 0.212);
     height:60px;
     width:60px;
+    padding-top: 15px;
+    text-align: center;
 }
 
 .controllers{
