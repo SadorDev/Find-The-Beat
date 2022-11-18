@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/0d6dd7f645.js" crossorigin="anonymous"></script>
     <title>Find The Beat</title>
 </head>
 
@@ -77,12 +78,28 @@
                         <p>Beat</p>
                     </div>
                 </div>
+            </div>
+            <div class="btns">
+                <button>Change level</button>
+                <span class="modal-open"><i class="fa-solid fa-person-chalkboard"></i>Instructions</span>
+                <div class="modal-wrapper">
+                    <div class="modal">
+                        <p>Page contain three converters (temperature, length and speed) with buttons. Each buttons
+                            react with converter above.<br>
+                            Conversion results are displayed just under input fields. <br>
+                            <span>Only numbers can be converted!</span>
+                        </p>
+                        <span>Buttons functions:</span>
+                        <ul>
+                            <li>Button CONVERT calculate value typed in input</li>
+                            <li>Button CHANGE SIDES swaps converted values which are displayed above input field</li>
+                            <li>Button RESET wipe data and bring values to deafult</li>
+                        </ul>
+                        <i class="fa-solid fa-xmark modal-close"></i>
+                    </div>
                 </div>
-                <div class="btns">
-                    <button>Change level</button>
-                    <p>INSTRUCTIONS</p>
-                    <button>Reset</button>
-                </div>
+                <button>Reset</button>
+            </div>
         </section>
     </main>
     <script src="./js/app.js"></script>
