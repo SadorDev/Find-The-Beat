@@ -9,3 +9,11 @@ modalOpen.addEventListener("click", () => {
 modalClose.addEventListener("click", () => {
 	modal.classList.remove("show");
 });
+
+// Update and display current year in footer
+document
+	.querySelector(".date")
+	.appendChild(document.createTextNode(new Date().getFullYear()));
+
+
+// !!!!!!!Game code below!!!!!!!!!!
