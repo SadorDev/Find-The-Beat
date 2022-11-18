@@ -3,8 +3,8 @@
 Turgut
 ## How to play
 
-* 
-* 
+* 1.    
+* 2.
 * 
 
 ## Setup
