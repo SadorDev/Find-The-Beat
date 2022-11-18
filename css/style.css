@@ -1,3 +1,8 @@
+:root{
+    --main: rgb(0, 255, 34);
+    --sub-btn: #00a7fc;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,7 +11,7 @@
 body {
 	font-family: "Metal Mania", cursive;
 	background: center / cover no-repeat url("../assets/images/apocal-drum.jfif");
-	color: rgb(0, 255, 34);
+	color: var(--main);
 	font-size: 22px;
     
 }
@@ -23,13 +28,13 @@ main {
 	justify-content: center;
 	flex-direction: column;
 }
-button {
+/* button {
 	background-color: rgba(0, 0, 0, 0.918);
 	width: 100px;
 	height: 60px;
 	border-radius: 15px;
-	color: rgb(0, 255, 34);
-}
+	color: var(--main);
+} */
 
 #game-container {
     position: relative;
@@ -37,7 +42,7 @@ button {
 	height: 600px;
 	background-color: rgba(26, 23, 23, 0.8);
 	border-radius: 20px;
-	box-shadow: rgb(0, 255, 34);
+	box-shadow: var(--main);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -48,7 +53,9 @@ button {
     top: 10px;
     left: 10px;
 }
-
+.info{
+    margin-top: 20px;
+}
 .info, .btns{
     display: flex;
     width: 70%;
@@ -106,17 +113,30 @@ button {
 .modal-open, .fa-solid{
     display: inline-block;
     cursor: pointer;
-    color: var(--font-color);
+    color: var(--main);
     padding: 0.8rem ;
     text-align: center;
     text-transform: uppercase;
     font-size: 1.3rem;
-    border-radius: 5px;
 }
 .modal-open:hover{
-	color: var(--font-hover);
-    text-decoration: underline;
+	color: var(--sub-btn);
 }
+
+.modal-open::after {
+    content: '';
+    display: block;
+    width: 0;
+    margin-top: 5px;
+    border-bottom:2px solid var(--sub-btn);
+    transition: width .3s;
+}
+
+.modal-open:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
 .modal-wrapper{
 	opacity: 0;
     position: fixed;
@@ -142,11 +162,12 @@ button {
     align-items: center;
     justify-content: center;
 	gap:0.5rem;
-    background-color: #fdeacf;
-    width: 700px;
+    background-color: rgba(26, 23, 23, 0.8);
+    width: 800px;
     max-width: 95%;
     padding: 3rem 1rem;
 	line-height: 1.4;
+    border-radius: 10px;
 
 }
 .modal ul {
@@ -156,7 +177,7 @@ button {
 	font-weight: 600;
 }
 .modal-close{
-    color: #001d1c;
+    color: var(--main);
     position: absolute;
     top: 0;
     right: 0;
@@ -166,3 +187,173 @@ footer{
 	width: 100%;
 	text-align: center;
 }
+
+
+/* BUTTONS EFECT */
+
+.btn-21 {
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: "Metal Mania", cursive;
+    font-size: 20px;
+    width: 200px;
+    height: 45px;
+    position: relative;
+    color: var(--main);
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+    border-radius: 0px;
+    background: transparent;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+  }
+  
+  .btn-21:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--main));
+    animation: btn-21-right 2s linear infinite;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .btn-21:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, var(--main));
+    animation: btn-21-bottom 2s linear infinite;
+    animation-delay: 1s;
+    transform: translateY(-100%);
+  }
+  
+  .btn-21 span {
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+    
+  }
+  
+  .btn-21 span:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, transparent, var(--main));
+    animation: btn-21-left 2s linear infinite;
+  }
+  
+  .btn-21 span:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, var(--main));
+    animation: btn-21-top 2s linear infinite;
+    animation-delay: 1s;
+    transform: translateY(-100%);
+  }
+  
+  .btn-21:hover:before {
+    background: linear-gradient(to right, transparent, var(--sub-btn));
+  }
+  
+  .btn-21:hover:after {
+    background: linear-gradient(to bottom, transparent, var(--sub-btn));
+  }
+  
+  .btn-21 span:hover:before {
+    background: linear-gradient(to top, transparent, var(--sub-btn));
+  }
+  
+  .btn-21 span:hover:after {
+    background: linear-gradient(to left, transparent, var(--sub-btn));
+  }
+  
+  .btn-21:hover {
+    color: var(--sub-btn);
+  }
+  
+  .btn-21:active:before {
+    background: linear-gradient(to right, transparent, var(--main));
+  }
+  
+  .btn-21:active:after {
+    background: linear-gradient(to bottom, transparent, var(--main));
+  }
+  
+  .btn-21 span:active:before {
+    background: linear-gradient(to top, transparent, var(--main));
+  }
+  
+  .btn-21 span:active:after {
+    background: linear-gradient(to left, transparent, var(--main));
+  }
+  
+  .btn-21:active {
+    color: var(--main);
+  }
+  
+  @keyframes btn-21-right {
+    0% {
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      transform: translateX(100%);
+    }
+  
+  }
+  
+  @keyframes btn-21-top {
+    0% {
+      transform: translateY(100%);
+    }
+  
+    100% {
+      transform: translateY(-100%);
+    }
+  
+  }
+  
+  @keyframes btn-21-left {
+    0% {
+      transform: translateX(100%);
+    }
+  
+    100% {
+      transform: translateX(-100%);
+    }
+  
+  }
+  
+  @keyframes btn-21-bottom {
+    0% {
+      transform: translateY(-100%);
+    }
+  
+    100% {
+      transform: translateY(100%);
+    }
+  
+  }
+  
+  .btn-21:focus {
+    outline: none
+  }
