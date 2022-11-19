@@ -17,13 +17,17 @@
     <main>
         <h1 class="title">Find The Beat</h1>
         <section id="game-container">
-            <button id="start-btn">New Game</button>
+            
+            <button id="start-btn" class="btn-21">
+                <span>Start</span>
+            </button>
 
             <div class="info">
-                <span>Score :</span>
-                <span>Timer :</span>
-                <span>Lives :</span>
+                <span id="score">Score :</span>
+                <span id="timer">Timer :</span>
+                <span id="lives">Lives :</span>
             </div>
+    
             <div class="grid-container">
                 <div class="left-grid">
                     <div class="grid-3">
@@ -80,13 +84,13 @@
                 </div>
             </div>
             <div class="btns">
-                <button>Change level</button>
-                <span class="modal-open"><i class="fa-solid fa-person-chalkboard"></i>Instructions</span>
+                <button id="level" class="btn-21">
+                    <span>Levels</span>
+                </button>
+                <span class="modal-open">Instructions</span>
                 <div class="modal-wrapper">
                     <div class="modal">
-                        <p>Page contain three converters (temperature, length and speed) with buttons. Each buttons
-                            react with converter above.<br>
-                            Conversion results are displayed just under input fields. <br>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, et. Quisquam at maiores ad quis mollitia reprehenderit voluptas nisi omnis dolor animi. Doloribus hic asperiores impedit! Dicta vel exercitationem praesentium! <br>
                             <span>Only numbers can be converted!</span>
                         </p>
                         <span>Buttons functions:</span>
@@ -98,7 +102,9 @@
                         <i class="fa-solid fa-xmark modal-close"></i>
                     </div>
                 </div>
-                <button>Reset</button>
+                <button id="reset" class="btn-21">
+                    <span>Reset</span>
+                </button>
             </div>
         </section>
     </main>
