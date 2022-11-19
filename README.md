@@ -3,9 +3,18 @@
 
 ## How to play
 
-* 1.    
-* 2.
-* 
+
+### Wireframes
+![WireframesStart](assets/images/startgame.png)
+![Wireframesgame](assets/images/wireframes-main-game.png)
+
+### Flowchart
+![Flowchart](assets/images/flowchart.png)
+
+### Existing Features
+ 
+
+- __The landing page image__
 
 ## Setup
 
