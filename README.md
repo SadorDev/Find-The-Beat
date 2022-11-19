@@ -8,10 +8,13 @@ Turgut
 - __Desktop__
 ![WireframesStart](assets/images/startgame.png)
 ![Wireframesgame](assets/images/wireframes-main-game.png)
+    - Final Result
 ![Pcview](assets/images/pcview.png)
+
 - __Mobile__
 ![Wireframesmobile](assets/images/mobile.png)
-![mobileview](assets/images/mobileview.png)
+ - Final result
+![mobileview](assets/images/mobilescrn.png)
 
 ### Flowchart
 ![Flowchart](assets/images/flowchart.png)
