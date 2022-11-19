@@ -1,4 +1,4 @@
-// Modal window ---how to use---
+// Modal window --- Instructions---
 const modalOpen = document.querySelector(".modal-open");
 const modalClose = document.querySelector(".modal-close");
 const modal = document.querySelector(".modal-wrapper");
@@ -14,7 +14,6 @@ modalClose.addEventListener("click", () => {
 document
 	.querySelector(".date")
 	.appendChild(document.createTextNode(new Date().getFullYear()));
-
 
 // !!!!!!!Game code below!!!!!!!!!!
 
