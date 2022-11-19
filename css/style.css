@@ -8,6 +8,9 @@ body {
 	background: center / cover no-repeat url("../assets/images/apocal-drum.jfif");
 	color: rgb(0, 255, 34);
 	font-size: 22px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     
 }
 h1 {
@@ -142,11 +145,12 @@ button {
     align-items: center;
     justify-content: center;
 	gap:0.5rem;
-    background-color: #fdeacf;
-    width: 700px;
+    background-color: rgba(26, 23, 23, 0.8);
+    width: 800px;
     max-width: 95%;
     padding: 3rem 1rem;
 	line-height: 1.4;
+    border-radius: 15px;
 
 }
 .modal ul {
@@ -156,13 +160,14 @@ button {
 	font-weight: 600;
 }
 .modal-close{
-    color: #001d1c;
+    color: rgb(0, 255, 34);
     position: absolute;
     top: 0;
     right: 0;
 }
 
 footer{
+    margin-top: auto; 
 	width: 100%;
 	text-align: center;
 }
