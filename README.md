@@ -1,28 +1,9 @@
 # **Find The Beat**
 
-Turgut
 ## How to play
 
-
-### Wireframes
-- __Desktop__
-![WireframesStart](assets/images/startgame.png)
-![Wireframesgame](assets/images/wireframes-main-game.png)
-    - Final Result
-![Pcview](assets/images/pcview.png)
-
-- __Mobile__
-![Wireframesmobile](assets/images/mobile.png)
- - Final result
-![mobileview](assets/images/mobilescrn.png)
-
-### Flowchart
-![Flowchart](assets/images/flowchart.png)
-
-### Existing Features
- 
-
-- __The landing page image__
+*
+*
 
 ## Setup
 
@@ -34,6 +15,32 @@ Turgut
 
 1. Double click setup.exe
 2. Follow onscreen 
+
+## Wireframes
+
+<details><summary>Desktop</summary>
+
+![WireframesStart](assets/images/startgame.png)
+![Wireframesgame](assets/images/wireframes-main-game.png)
+- Final Result
+![Pcview](assets/images/pcview.png)
+</details>
+
+<details><summary>Mobile</summary>
+
+![Wireframesmobile](assets/images/mobile.png)
+- Final result
+
+![mobileview](assets/images/mobilescrn.png)
+</details>
+
+## Flowchart of game play
+
+![Flowchart](assets/images/flowchart.png)
+
+## Existing Features
+ 
+- __The landing page image__
 
 ## Credits
 
