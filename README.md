@@ -9,6 +9,8 @@
 
 ### Deployed link
 
+- Start Page
+
 [Click here to play!]()
 
 ### How to install
