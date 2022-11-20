@@ -35,6 +35,15 @@ timer.textContent = "Time = 00:00:00";
 lives.textContent = "Lives = 5";
 
 let count = 3;
+let gameArray = [];
+let userArray = [];
+
+function createGameArray() {
+	for (i = 0; i < 7; i++){
+		let soundNum = Math.trunc(Math.random()*12) + 1
+		gameArray.push(soundNum);
+	};
+};
 
 function endCountdown() {
   countdown.style.display = "none";
@@ -51,11 +60,9 @@ function handleCountdownTimer() {
   }
 }
 
-startGameBtn.addEventListener("click", function () {
-  menu.style.display = "none";
-  countdown.style.display = "block";
-  game.style.display = "none";
-  let timer = setInterval(function () {
-    handleCountdownTimer(count);
-  }, 1000);
+startGameBtn.addEventListener('click', function () {
+    menu.style.display = 'none';
+    countdown.style.display = 'block';
+	game.style.display = 'none';
+	let timer = setInterval(function() { handleCountdownTimer(count); }, 1000);
 });
