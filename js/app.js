@@ -28,6 +28,7 @@ const score = document.querySelector("#score");
 const timer = document.querySelector("#timer");
 const lives = document.querySelector("#lives");
 const countdownTimer = document.querySelector("#countdown");
+const soundsPlayer = document.querySelectorAll(".sound");
 
 // console.log(startBtn,levelBtn,resetBtn,score,timer,lives);
 score.textContent = "Score = 0";
@@ -77,4 +78,16 @@ startGameBtn.addEventListener('click', function () {
   countdown.style.display = 'block';
   // game.style.display = 'none';
   startGame();
+});
+
+// load sounds for the pads 
+window.addEventListener("load", () => {
+  const pads = document.querySelectorAll(".cell");
+  
+  pads.forEach((pad, index) => {
+      pad.addEventListener("click", function () {
+          soundsPlayer[index].currentTime = 0;
+          soundsPlayer[index].play();
+      });
+  });
 });
