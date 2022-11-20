@@ -47,6 +47,7 @@ function createGameArray() {
 
 function endCountdown() {
   countdown.style.display = "none";
+  menu.style.display = "none";
   /*game.style.display = "block";*/
 }
 
@@ -72,8 +73,8 @@ function startGame() {
 
 // Event Listeners
 startGameBtn.addEventListener('click', function () {
-  menu.style.display = 'none';
+  // menu.style.display = 'none';
   countdown.style.display = 'block';
-  game.style.display = 'none';
+  // game.style.display = 'none';
   startGame();
 });
