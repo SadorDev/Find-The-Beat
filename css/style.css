@@ -43,6 +43,16 @@ main {
 	align-items: center;
 	justify-content: space-around;
 }
+
+/* Visibility */
+#game, #countdown-container {
+    display: none;
+}
+
+#countdown {
+	font-size: 100px;
+}
+
 #start-btn {
 	position: absolute;
 	top: 10px;
