@@ -38,6 +38,13 @@ let count = 3;
 let gameArray = [];
 let userArray = [];
 
+function createGameArray() {
+	for (i = 0; i < 7; i++){
+		let soundNum = Math.trunc(Math.random()*12) + 1
+		gameArray.push(soundNum);
+	};
+};
+
 function endCountdown() {
 	countdown.style.display = 'none';
 	game.style.display = 'block';
@@ -59,6 +66,8 @@ function startCountdownTimer() {
 
 function startGame() {
 	startCountdownTimer();
+	createGameArray();
+	console.log(gameArray);
 }
 
 // Event Listeners
@@ -69,3 +78,4 @@ startGameBtn.addEventListener('click', function () {
 	game.style.display = 'none';
 	startGame();
 });
+
