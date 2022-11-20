@@ -4,16 +4,16 @@ const modalClose = document.querySelector(".modal-close");
 const modal = document.querySelector(".modal-wrapper");
 
 modalOpen.addEventListener("click", () => {
-	modal.classList.add("show");
+  modal.classList.add("show");
 });
 modalClose.addEventListener("click", () => {
-	modal.classList.remove("show");
+  modal.classList.remove("show");
 });
 
 // Update and display current year in footer
 document
-	.querySelector(".date")
-	.appendChild(document.createTextNode(new Date().getFullYear()));
+  .querySelector(".date")
+  .appendChild(document.createTextNode(new Date().getFullYear()));
 
 // !!!!!!!Game code below!!!!!!!!!!
 
@@ -39,32 +39,41 @@ let gameArray = [];
 let userArray = [];
 
 function createGameArray() {
-	for (i = 0; i < 7; i++) {
-		let soundNum = Math.trunc(Math.random() * 12) + 1;
+	for (i = 0; i < 7; i++){
+		let soundNum = Math.trunc(Math.random()*12) + 1
 		gameArray.push(soundNum);
-	}
-}
+	};
+};
 
 function endCountdown() {
-	countdown.style.display = "none";
-	menu.style.display = "none";
-	game.style.display = "block";
+  countdown.style.display = "none";
+  game.style.display = "block";
 }
 
 function handleCountdownTimer() {
-	if (count === 0) {
-		clearInterval(timer);
-		endCountdown();
-	} else {
-		countdownTimer.innerText = count;
-		count--;
-	}
+  if (count === 0) {
+    clearInterval(timer);
+    endCountdown();
+  } else {
+    countdownTimer.innerText = count;
+    count--;
+  }
 }
-startGameBtn.addEventListener("click", function () {
-	// menu.style.display = 'none';
-	countdown.style.display = "block";
-	// game.style.display = 'none';
-	let timer = setInterval(function () {
-		handleCountdownTimer(count);
-	}, 1000);
+
+function startCountdownTimer() {
+  setInterval(function() { handleCountdownTimer(count); }, 1000);
+}
+
+function startGame() {
+  startCountdownTimer();
+  createGameArray();
+  console.log(gameArray);
+}
+
+// Event Listeners
+startGameBtn.addEventListener('click', function () {
+  menu.style.display = 'none';
+  countdown.style.display = 'block';
+  game.style.display = 'none';
+  startGame();
 });
