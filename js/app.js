@@ -47,7 +47,7 @@ function createGameArray() {
 
 function endCountdown() {
   countdown.style.display = "none";
-  game.style.display = "block";
+  /*game.style.display = "block";*/
 }
 
 function handleCountdownTimer() {
