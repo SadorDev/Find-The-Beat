@@ -14,114 +14,107 @@
 </head>
 
 <body>
+
+    <div id="menu">
+        <button id="start-game-btn" class="btn-21">
+            <span>Start Game</span>
+        </button>
+        <button class="menu-instructions btn-21">
+            <span class="modal-open">Instructions</span>
+        </button>
+    </div>
     <main>
         <h1 class="title">Find The Beat</h1>
+        <section id="game-container" >
+            <!-- <button class="btn-21 start-game">
+                <span>Start</span>
+            </button> -->
 
-        <section id="game-container">
-            
-            <div id="menu">
-                <button id="start-game-btn" class="btn-21">
-                    <span>Start Game</span>
-                </button>
-    
-                <button class="btn-21">
-                    <span>Instructions</span>
-                </button>
+            <div class="info">
+                <span id="score">Score :</span>
+                <span id="timer">Timer :</span>
+                <span id="lives">Lives :</span>
             </div>
 
-            <div id="countdown-container">
-                <div id="countdown"></div>
+            <div class="grid-container">
+                <div class="left-grid">
+                    <div class="grid-3">
+                        <p>Drums</p>
+                        <div class="cell">1
+                            <audio class="sound" src=""></audio>
+                        </div>
+                        <div class="cell">2
+                            <audio class="sound" src=""></audio>
+                        </div>
+                        <div class="cell">3
+                            <audio class="sound" src=""></audio>
+                        </div>
+                    </div>
+                    <div class="grid-3">
+                        <p>Snare</p>
+                        <div class="cell">4
+                            <audio class="sound" src=""></audio>
+                        </div>
+                        <div class="cell">5
+                            <audio class="sound" src=""></audio>
+                        </div>
+                        <div class="cell">6
+                            <audio class="sound" src=""></audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-grid">
+                    <div class="grid-3">
+                        <div class="cell">7
+                            <audio class="sound" src=""></audio>
+                        </div>
+                        <div class="cell">8
+                            <audio class="sound" src=""></audio>
+                        </div>
+                        <div class="cell">9
+                            <audio class="sound" src=""></audio>
+                        </div>
+                        <p>Kick</p>
+                    </div>
+                    <div class="grid-3">
+                        <div class="cell">10
+                            <audio class="sound" src=""></audio>
+                        </div>
+                        <div class="cell">11
+                            <audio class="sound" src="">
+                            </audio>
+                        </div>
+                        <div class="cell">12
+                            <audio class="sound" src=""></audio>
+                        </div>
+                        <p>Beat</p>
+                    </div>
+                </div>
             </div>
-
-            <div id="game">
-                <!-- <button id="start-btn" class="btn-21">
-                    <span>Start</span>
-                </button> -->
-
-                <div class="info">
-                    <span id="score">Score :</span>
-                    <span id="timer">Timer :</span>
-                    <span id="lives">Lives :</span>
-                </div>
-        
-                <div class="grid-container">
-                    <div class="left-grid">
-                        <div class="grid-3">
-                            <p>Drums</p>
-                            <div class="cell">1
-                                <audio class="sound" src=""></audio>
-                            </div>
-                            <div class="cell">2
-                                <audio class="sound" src=""></audio>
-                            </div>
-                            <div class="cell">3
-                                <audio class="sound" src=""></audio>
-                            </div>
-                        </div>
-                        <div class="grid-3">
-                            <p>Snare</p>
-                            <div class="cell">1
-                                <audio class="sound" src=""></audio>
-                            </div>
-                            <div class="cell">2
-                                <audio class="sound" src=""></audio>
-                            </div>
-                            <div class="cell">3
-                                <audio class="sound" src=""></audio>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right-grid">
-                        <div class="grid-3">
-                            <div class="cell">1
-                                <audio class="sound" src=""></audio>
-                            </div>
-                            <div class="cell">2
-                                <audio class="sound" src=""></audio>
-                            </div>
-                            <div class="cell">3
-                                <audio class="sound" src=""></audio>
-                            </div>
-                            <p>Kick</p>
-                        </div>
-                        <div class="grid-3">
-                            <div class="cell">1
-                                <audio class="sound" src=""></audio>
-                            </div>
-                            <div class="cell">2
-                                <audio class="sound" src="">
-                                </audio>
-                            </div>
-                            <div class="cell">3
-                                <audio class="sound" src=""></audio>
-                            </div>
-                            <p>Beat</p>
-                        </div>
+            <div class="btns">
+                <button id="level" class="btn-21">
+                    <span>Levels</span>
+                </button>
+                <span class="modal-open">Instructions</span>
+                <div class="modal-wrapper">
+                    <div class="modal">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, et. Quisquam at maiores ad
+                            quis mollitia reprehenderit voluptas nisi omnis dolor animi. Doloribus hic asperiores
+                            impedit! Dicta vel exercitationem praesentium! <br>
+                            <span>Only numbers can be converted!</span>
+                        </p>
+                        <span>Buttons functions:</span>
+                        <ul>
+                            <li>Button CONVERT calculate value typed in input</li>
+                            <li>Button CHANGE SIDES swaps converted values which are displayed above input field</li>
+                            <li>Button RESET wipe data and bring values to deafult</li>
+                        </ul>
+                        <i class="fa-solid fa-xmark modal-close"></i>
                     </div>
                 </div>
-                <div class="btns">
-                    <button id="level" class="btn-21">
-                        <span>Levels</span>
-                    </button>
-                    <span class="modal-open">Instructions</span>
-                    <div class="modal-wrapper">
-                        <div class="modal">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, et. Quisquam at maiores ad quis mollitia reprehenderit voluptas nisi omnis dolor animi. Doloribus hic asperiores impedit! Dicta vel exercitationem praesentium! <br>
-                                <span>Only numbers can be converted!</span>
-                            </p>
-                            <span>Buttons functions:</span>
-                            <ul>
-                                <li>Button CONVERT calculate value typed in input</li>
-                                <li>Button CHANGE SIDES swaps converted values which are displayed above input field</li>
-                                <li>Button RESET wipe data and bring values to deafult</li>
-                            </ul>
-                            <i class="fa-solid fa-xmark modal-close"></i>
-                        </div>
-                    </div>
-                    <button id="reset" class="btn-21">
-                        <span>Reset</span>
-                    </button>
-                </div>
+                <button id="reset" class="btn-21">
+                    <span>Reset</span>
+                </button>
             </div>
         </section>
     </main>
