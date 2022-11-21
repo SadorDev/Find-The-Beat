@@ -1,12 +1,10 @@
 # *PROJECT NAME: Find The Beat* : *Hackathon Nov 2022*
 
-
-[Click here to play!]()
-# **Find The Beat**
-
+### Deployed link
+[Click here to play!](https://monika-hrda.github.io/Find-The-Beat/)
 
 ## How to play
-*There will be a random 7-sequence beat scattered around the board's instrumments.
+* There will be a random 7-sequence beat scattered around the board's instrumments.
 * You will then be given 3 seconds to memorise the  beat/locations of the sounds.
 * Select all the correct instrumments in the correct order to earn 1 point.
 * If you fail to select atleast 1 sound you will lose 1 Life.
@@ -14,8 +12,6 @@
 * If the sequence is not correct you will lose 1 Life. 
 * You will then be given a new sequance in the next round.
 
-### Deployed link
-* https://monika-hrda.github.io/Find-The-Beat/
 ## Project Overview
 Find the beat is a music-based memory pattern game.  
 The application was made by Monika, Michal, Bogdan, and Sador.
