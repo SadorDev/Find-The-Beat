@@ -6,61 +6,26 @@
 
 
 ## How to play
+*There will be a random 7-sequence beat scattered around the board's instrumments.
+* You will then be given 3 seconds to memorise the  beat/locations of the sounds.
+* Select all the correct instrumments in the correct order to earn 1 point.
+* If you fail to select atleast 1 sound you will lose 1 Life.
+* If any beat is missed you will lose 1 Life. 
+* If the sequence is not correct you will lose 1 Life. 
+* You will then be given a new sequance in the next round.
 
-*
-*
-## Setup
-*
 ### Deployed link
-*
+* https://monika-hrda.github.io/Find-The-Beat/
 ## Project Overview
-The theme of the project is a music memory game board.The user interface is simple design which enables user to click the button to hear a sound and try to repeat the same sound in their memory. This is a fun game to help with concentration and focus.
-The initiative for this project is for students to apply their knowledge and collaborate in team to bring up ideas to build a functional music game page incorporating Code Institute lessons such as Html, CSS and Javascript.
-We have applied scrumm methdodology principles.
+Find the beat is a music-based memory pattern game.  
+The application was made by Monika, Michal, Bogdan, and Sador.
+- When start the game is pressed player is introduced to 3 seconds loading stage until the game board is shown.
+After that what is supposed to happen is, a 7-beat pattern scattered around the board of instruments.
+If the user fails to register at least 1 beat the program should remove 1 life 
+When the player guessed all beats they will then move on to the next sequence.
+- There is a levels button option - this should increase the number of beats to a higher number to memorize.
+- The reset button will reset the sequence mid-game if user chooses so.
 
-## User Stories 
-
-**Persona**: Gamer 
-
-1. As a gamer i am presented with a music memory game board,
-   so that i can play the game.
-**Aceptance criteria**: Gamer was able to see the game board.
- 
-2. As a gamer, I want to be presented with the start game button
-   so that i can press the start game button to play the game. 
-   **Acceptance criteria**: Gamer was able to click the start game button and play.
-
-3. As a gamer, i want to be able to use the slider button to zoom in and out and rotate the game board
-so that i can play the game with ease.
-**Acceptance criteria**:  Gamer was able to zoom in and out and rotate the game board
-
-4. As gamer,i want to be able to listen to just the audio
-   so that  i can hear the sound 
-   **Acceptance criteria**: Gamer was able to listen to  the audio and hear the sound.
-
-
-5. As gamer,i want to be able to play the sound in sequence
-   so that i can play back my favorite sound.
-  **Acceptance criteria** : Gamer was able to play sound in sequence, and played back its favourite sound
-
-6. As a gamer, i want to press the button to replay my favourite sound patterns .
- so that i can test my memory level.
- **Acceptance criteria** :  Gamer was able to play favourite sound patterns from memory.
-
-## Testing 
-
-*Test objective* : For the gamer to play the game in sequence, by clicking the start game button and listen to sequence of sounds in patterns.
-
-* We have conducted the testing based on the user stories
-
-* The test was conducted across browsers- Firefox and Google Chrome and Safari 
-
-* The test was tested on mobile phone (Android and Apple )
-   Mac and desktop on windows operatimg system .
-
-* User Acceptance test was done by the scrum team and received feedback on the functioality.
-
-*  The user acceptance test was signed off by scrum master.
 
 ## Wireframes
  Wireframe has been designed based on on high level functionality of the music game, some of this  might not be displayed in the final product of the game memory board.
@@ -90,8 +55,7 @@ so that i can play the game with ease.
 - __The landing page image__
 
 ## Credits
-
-* [Be sure to credit any assets that are not yours](https://www.example.com)
-* [Member 1 Linkedin](https://www.linkedin.com)
-* [Member 2 Linkedin](https://www.linkedin.com)
-* [etc. etc.](https://www.example.com)
+* Monika
+* Michal
+* Bogdan
+* Sador 
