@@ -30,9 +30,7 @@ const lives = document.querySelector("#lives");
 const countdownTimer = document.querySelector("#countdown");
 const soundsPlayer = document.querySelectorAll(".sound");
 const pads = document.querySelectorAll(".cell");
-// const gridCont = document.querySelector("game-container");
 
-// console.log(startBtn,levelBtn,resetBtn,score,timer,lives);
 score.textContent = "Score = 0";
 timer.textContent = "Time = 00:00:00";
 lives.textContent = "Lives = 5";
@@ -44,12 +42,12 @@ let userArray = [];
 function getUserArray(event) {
   const currentPad = event.currentTarget;
   userClick = currentPad.innerText;
-  console.log(userClick);
-  console.log(userArray);
+  // console.log(userClick);
+  // console.log(userArray);
   if (userArray.length < 7) {
     userArray.push(+userClick)
-    console.log(userArray);
-    console.log('click');
+    // console.log(userArray);
+    // console.log('click');
   } else {
     // gridCont.style.visibility = 'hidden';
     console.log('This needs to leave loop and stop playing sounds');
@@ -92,7 +90,6 @@ function startCountdownTimer() {
 function startGame() {
   startCountdownTimer();
   createGameArray();
-  console.log(gameArray);
   setPadListener();
 }
 
