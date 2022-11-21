@@ -1,14 +1,14 @@
 // Modal window --- Instructions---
-const modalOpen = document.querySelector(".modal-open");
-const modalClose = document.querySelector(".modal-close");
+const modalOpen = document.querySelectorAll(".modal-open");
+const modalClose = document.querySelectorAll(".modal-close");
 const modal = document.querySelector(".modal-wrapper");
 
-modalOpen.addEventListener("click", () => {
+modalOpen.forEach(modalO => modalO.addEventListener("click", () => {
   modal.classList.add("show");
-});
-modalClose.addEventListener("click", () => {
+}));
+modalClose.forEach(modalC => modalC.addEventListener("click", () => {
   modal.classList.remove("show");
-});
+}));
 
 // Update and display current year in footer
 document

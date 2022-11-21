@@ -477,3 +477,10 @@ and (orientation : landscape){
 		justify-content: flex-start;
 	}
 }
+.cell {
+    cursor: pointer;
+}
+.cell:hover{
+    background-color: var(--main);
+    color:  black;
+}
