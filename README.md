@@ -1,4 +1,4 @@
-# *PROJECT NAME: Hackathon-Music* : *Hackathon Nov 2022*
+# *PROJECT NAME: Find The Beat* : *Hackathon Nov 2022*
 
 
 [Click here to play!]()
